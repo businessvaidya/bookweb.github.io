@@ -1,9 +1,153 @@
-*{ margin: 0; padding: 0; box-sizing: border-box; }
-
-:root {
-  --bg-navbar: #346CB0;
+*{
+	box-sizing: border-box;
 }
 
-.bg-navbar{
-  background-color: #346CB0;
+
+
+.header-color{
+	background-color: #e9e9e9;
+}
+
+
+
+ .hide-search{
+	display: none;
+}
+
+
+.para-right {
+	position:absolute;
+	right: 5%;
+}
+
+#classTwelvePhysics{
+/*	display: none;*/
+ 
+
+}
+
+#classTwelveChemistry{
+	display: none;
+}
+
+#classTwelveMath{
+	display: none;
+}
+
+#classTwelveEnglish{
+	display: none;
+}
+
+#classTwelveComputer{
+	display: none;
+}
+
+#classElevenPhysics{
+	display: none;
+}
+
+#classElevenChemistry{
+	display: none;
+}
+
+#classElevenMath{
+	display: none;
+}
+
+#classElevenEnglish{
+	display: none;
+}
+
+#classElevenComputer{
+	display: none;
+}
+
+#classTenEnglish{
+	display: none;
+}
+
+#classTenHindi{
+	display: none;
+}
+
+#classTenMath{
+	display: none;
+}
+
+#classTenScience{
+	display: none;
+}
+
+#classTenSocialScience{
+	display: none;
+}
+
+#classTenComputer{
+	display: none;
+}
+
+
+#classNineEnglish{
+	display: none;
+}
+
+#classNineHindi{
+	display: none;
+}
+
+#classNineMath{
+	display: none;
+}
+
+#classNineScience{
+	display: none;
+}
+
+#classNineSocialScience{
+	display: none;
+}
+
+#classNineComputer{
+	display: none;
+}
+
+
+
+a{
+	text-decoration: none;
+}
+
+
+footer{
+	height: 350px;
+	width: auto;
+	background-color:#e9e9e9; 
+}
+
+.hide-web{
+	display: none;
+}
+
+.footer-div{
+	width: auto;
+	height: 10px;
+
+}
+
+@media screen and (max-width: 800px) {
+ 
+ .hide{
+	display: none;
+}
+
+
+.Mob-size{
+	font-size: 10px;
+}
+
+
+.Mob-adjust{
+	margin-left: 10vw;
+}
+
 }
