@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Books2Notes | BOOKS & NOTES</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600" rel="stylesheet">
+    <!-- Google font end -->
+    <link rel="stylesheet" href="theme.min.css" data-skin="default">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <!-- font awesome icon end -->
+
+  </head>
+  <body>
+      <header class="app-header app-header-dark">
+        <!-- .top-bar -->
+        <div class="top-bar">
+          <div>
+            <a class="top-bar-brand text-light" href="#">Books2Notes</a>
+          </div>
+          <!-- .top-bar-list -->
+          <div class="top-bar-list">
+            <!-- .top-bar-item -->
+            <div class="top-bar-item px-2 d-md-none d-lg-none d-xl-none">
+              <!-- toggle menu -->
+              <button class="hamburger hamburger-squeeze" type="button" data-toggle="aside" aria-label="toggle menu"><span class="hamburger-box" onclick="sidebarShow();"><span class="hamburger-inner"></span></span></button> <!-- /toggle menu -->
+            </div><!-- /.top-bar-item -->
+            <!-- .top-bar-item -->
+            <div class="top-bar-item top-bar-item-full">
+              <!-- .top-bar-search -->
+              <form class="top-bar-search">
+                <!-- .input-group -->
+
+                <div class="input-group input-group-search dropdown">
+                  <div class="input-group-prepend">
+                   <span class="input-group-text"><span class="oi oi-magnifying-glass"></span></span>
+                  </div><input type="text" class="form-control" data-toggle="dropdown" aria-label="Search" placeholder="Search"> <!-- .dropdown-menu -->
+                  
+                </div><!-- /.input-group -->
+              </form><!-- /.top-bar-search -->
+            </div><!-- /.top-bar-item -->
+            <!-- .top-bar-item -->
+            <div class="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
+              <!-- .nav -->
+              <ul class="header-nav nav">
+                <!-- .nav-item -->
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.facebook.com/Books2Notes-112194397177119" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-facebook"></span></a> 
+                </li>
+                <!-- /.nav-item -->
+                <!-- .nav-item -->
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.instagram.com/books2notes/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-instagram"></span></a> 
+                </li><!-- /.nav-item -->
+                <!-- .nav-item -->
+                <li class="nav-item dropdown header-nav-dropdown">
+                  <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-whatsapp"></span></a>
+                </li>
+                <!-- /.nav-item -->
+              </ul>
+              <!-- /.nav -->
+
+
+              <!-- .btn-account -->
+              <div class="dropdown d-none d-md-flex">
+                <button onclick="contactredirect();" class="btn-account" type="button" aria-haspopup="true" aria-expanded="false"><span class="user-avatar user-avatar-md"><img src="assets/images/avatars/profile.jpg" alt=""></span> <span class="account-summary pr-lg-4 d-none d-lg-block"><span class="account-name">Contact us
+                </span> </span></button> 
+              </div><!-- /.btn-account -->
+            </div><!-- /.top-bar-item -->
+          </div><!-- /.top-bar-list -->
+        </div><!-- /.top-bar -->
+      </header><!-- /.app-header -->
+
+
+      <!-- .app-aside -->
+      <aside class="app-aside app-aside-expand-md app-aside-light">
+        <!-- .aside-content -->
+        <div class="aside-content">
+         
+          <!-- .aside-menu -->
+          <div class="aside-menu overflow-hidden">
+            <!-- .stacked-menu -->
+            <nav id="stacked-menu" class="stacked-menu">
+              <!-- .menu -->
+              <ul class="menu">
+                <!-- .menu-item -->
+                <li class="menu-item has-active">
+                  <a href="index.html" class="menu-link"><span class="menu-icon fa fa-home"></span> <span class="menu-text">Home</span></a>
+                </li><!-- /.menu-item -->
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-file-text"></span> <span class="menu-text">Notes</span> <span class="badge badge-warning">New</span></a> 
+                </li><!-- /.menu-item -->
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-book"></span> <span class="menu-text">Books</span></a> 
+                </li><!-- /.menu-item -->
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-file-pdf-o"></span> <span class="menu-text">PDFs</span></a> 
+                </li><!-- /.menu-item -->
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-microchip"></span> <span class="menu-text">About us</span> <span class="badge badge-subtle badge-success">+4</span></a> 
+                </li><!-- /.menu-item -->
+                <!-- .menu-item -->
+                <li class="menu-item">
+                  <a href="landing-page.html" class="menu-link"><span class="menu-icon fa fa-rocket"></span> <span class="menu-text">Contact us</span></a>
+                </li><!-- /.menu-item -->
+                <!-- .menu-header -->
+                <li class="menu-header">CBSE </li><!-- /.menu-header -->
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-user"></span> <span class="menu-text">Class 12<sup>th</sup></span></a> 
+
+                </li><!-- /.menu-item -->
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-user"></span> <span class="menu-text">Class 11<sup>th</sup></span></a> 
+                </li><!-- /.menu-item -->
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-user"></span> <span class="menu-text">Class 10<sup>th</sup></span></a> 
+                </li><!-- /.menu-item -->
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-user"></span> <span class="menu-text">Class 9<sup>th</sup></span></a> 
+                </li><!-- /.menu-item -->
+              </ul><!-- /.menu -->
+            </nav><!-- /.stacked-menu -->
+          </div><!-- /.aside-menu -->
+        </div><!-- /.aside-content -->
+      </aside><!-- /.app-aside -->
+
+<!-- .app-main -->
+      <main class="app-main">
+        <!-- .wrapper -->
+        <div class="wrapper">
+          <!-- .page -->
+          <div class="page">
+            <!-- .page-inner -->
+            <div class="page-inner">
+              <!-- .page-title-bar -->
+              <header class="page-title-bar">
+                  <!-- button below navigation bar -->
+
+
+<div class="container ">
+  <div class="row">
+
+
+      <div class="col-lg-2 col-sm-3 col-md-3 col-6 ">
+      <div class="dropdown mt-3 ">
+        <button class="btn border-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Class 12<sup>th</sup>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show()">Physics</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show1()">Chemistry</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show2()">Mathematics</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show3()">Biology</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show4()">Computer Science</a>
+
+        </div>
+      </div>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-md-3 col-6 ">
+      <div class="dropdowns mt-3">
+        <button class="btn border-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Class 11<sup>th</sup>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show5()">Physics</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show6()">Chemistry</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show7()">Mathematics</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show8()">Biology</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show9()">Computer Science</a>
+
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col-lg-2 col-sm-3 col-md-3 col-6 ">
+      <div class="dropdown mt-3  ">
+        <button class="btn border-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Class 10<sup>th</sup>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show10()">English</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show11()">Math</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show12()">Science</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show13()">Social Science</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show14()">Hindi</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show15()">Computer Science</a>
+
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col-lg-2 col-sm-3 col-md-3 col-6 ">
+      <div class="dropdown mt-3  ">
+        <button class="btn border-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Class 09<sup>th</sup>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show16()">English</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show17()">Math</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show18()">Science</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show19()">Social Science</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show20()">Hindi</a>
+          <a class="dropdown-item" style="cursor: pointer;" onclick="show21()">Computer Science</a>
+
+        </div>
+      </div>
+      </div>
+
+
+  </div> <!-- row ends here -->
+
+</div>
+
+
+
+<!-- button below navigation bar ends-->
+
+<div class="Mob-size">
+
+
+<!-- class 12 phsics start -->
+
+<div  id="classTwelvePhysics" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>PHYSICS 12</h5></li>
+        <li class="list-group-item"> Chapter 1 :  Electric Charges And Fields <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1ApnQmYPHRCrkVTtVnEYQuEZguCL2DIEz/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2 :  Electrostatic Potential And Capacitance <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1PJMEK5yO7hHXMxNqyaGcf6P90jTSGzjj/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3 :  Current Electricity                                             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1HVqjP4yVFrTe-dBDFDDRO06RBfUYvaiK/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4 :  Moving Charges and Magnetism                                    <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1F522asJnGQAhcb9g40YShomaCtUMSKmC/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5 :  Magnetism and Matter                                            <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1dQgmeVg6DPi6cdctXEQj1fFtsq-hMng6/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6 :  Electromagnetic Induction                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1kA9jVBWExe0OMOYrPIj2b_TraT5vkz3f/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                                             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1TY1xCsu_8rU0FYbgAGyoCrEyI3iqwsh9/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                                           <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1F1rMr4vP6P6tC_WLG7W5tMBK3hnFlG5s/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments                              <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/10SOEtKWEc-Un7Uu-rq8VhO87Xu6loWIz/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                                     <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1ebMJ3gqVTdL-b0iRwY8lTBjMQgi263xf/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter                             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1qQvJcaldc6grlKUdecn4SvKGxWGq0cnV/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                                           <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1NAYXJfk2xqDlBv-JxMW1eCCUWEgs12a8/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                                          <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1P-EpXrjKSG-FSnApzFh_q6K9y4sJEeTB/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/13dt3D4zaOrJqT5Yg8reFuNBxm87TvORY/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          
+
+          
+          
+      </ul>
+   </div>
+
+   </div>
+
+
+
+
+</div>
+</div>
+
+   <!--  class 12physics end -->
+
+
+    <!-- class 12 Chemistry start -->
+
+<div  id="classTwelveChemistry" >
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success " style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>CHEMISTRY 12</h5></li>
+        <li class="list-group-item"> Chapter 1:  The Solid State                                     <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1xkvlBNqE4vYMjmecyBjCkcnxdVJN-h9L/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Solutions                                           <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1pdu-Of0HZ9Y_6_VSWtKCOaG0R5m6vYpn/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Electrochemistry                                    <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1ixbUXJcc9f0YL8VwWQDxkruvZhGh6qXP/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Chemical Kinetics                                   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1e98l8HYZi4cFZFKwZhkselkzS2x0GbPK/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Surface Chemistry                                   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1mqsUo_M1Lw2gtQ2pC316qUzGZGDtPzD_/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  General Principles and Process of Isolation of Elements   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1clBpB6zoAPNwuTS48NUDyeYVl0_sqxQS/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 7:  The p - Bloc Elements                                <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1HV8PliovjrqH1Qif5qOAR9OZfSLHGr8y/view?usp=sharing"> Book </a>)</p> </li>
+<li class="list-group-item"> Chapter 8:  The d and f Block Elements                                   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1jvWtaS8U2j8rKQxrwqe73ub8EAAkRFdh/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Coordination Compounds                             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/13Suk2V17EDZbl20PCwxFHEXQMKv6MhCT/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Haloalkanes and Haloarenes                          <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1cA9VTWlXDUbZObeLJ2Ldtln-IzjYi5yr/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Alcohols, Phenols and Ethers                        <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/119dg3mvfkh9XU7h0VfBo1WkxJAAQQsWU/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Aldehydes, Ketones and Carboxylic Acids             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1M0n-Y2XAoYJ6zSSiO5vIGmzVPn-Rr-Qh/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Amines          <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1Gw40njpBtXSk8HwXE1BDpw2a3sXxmTOA/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Biomolecules<p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1Gz9E6_bkV_AHUQ9sCYS3jKdJ25pAxUFh/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Polymers                                         <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1k-K0AdophpxDtYRoJ79mrdTjoDOyuIhX/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 16: Chemistry in Everyday Life                                         <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/18j5mC4li1FiezzYaprgnXzj-P3Pho57g/view?usp=sharing"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  12 CHEMISTRY end -->
+
+
+
+    <!-- class 12 Math start -->
+
+<div  id="classTwelveMath"  class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12" >
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>MATHEMATICS 12</h5></li>
+        <li class="list-group-item"> Chapter 1:  Relations and Functions                 <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1AUIxWGhAR0JoPwZFU86E6e5-uQBPNEw-/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Inverse Trigonometric Functions         <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1dLsOEuJqHDFH_GbmA5npgJZzcTw04BnQ/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Matrices                                <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1OPa05NLyRZbQ2XgrOSa380ZllKGGEqv2/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Determinants                            <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1OPa05NLyRZbQ2XgrOSa380ZllKGGEqv2/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Continuity and Differentiability        <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1_VomToQd5VYN6gD-78g7rIguT57-VnDE/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Applications of Derivatives             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/12q7L0yBsrsl0i-9UVg95jSUj-ItA-EqQ/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Integrals                             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1BaAW7jbb494mieXQPZebQ5MPwjrO1LOZ/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Applications of the Integrals         <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1r5FHsnh5OAkxFmG7wX_FrpVhdxSoHwYj/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Differential Equations                <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1UDpUB9bpxpzbaGod9br9PofIdesMT3Db/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Vectors                               <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1bSWMy-bIJuB8HMiKCMTe7qg9kaHMpM-t/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Three-Dimensional Geometry            <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/166gtWSR5EzlBOvRu-TvaDF8D6yYeGzz-/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Linear Programming                    <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1KnkxTDDpfWDl_1zRwVobEi7a9Sl9TqqR/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Probability                           <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1lDjVXqqLO-3cb33S6QtwoNUfF7HydnIr/view?usp=sharing"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  12 Mathematics end -->
+
+
+
+    <!-- class 12 Biology start -->
+
+<div  id="classTwelveEnglish" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>BIOLOGY 12</h5></li>
+        <li class="list-group-item"> Chapter 1:  Reproduction in organism                    <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Sexual Reproduction in flowering plants     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Human Reproduction                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Reproduction Health                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Principal of inheritance and variation      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Molecular basis of inheritance              <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Evolution                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Human Health and diseases                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Strategies for Enhancement in Food Production  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Microbes in Human welfare                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Biotechnology : Principles and Processes  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Biotechnology and Its Applications        <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Organisms and Populations                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Ecosystem                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Biodiversity and Conservation     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 16: Environmental Issues              <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+    
+         </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  12 Biology end -->
+
+
+    <!-- class 12 Computerstart -->
+
+<div  id="classTwelveComputer" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>COMPUTER 12</h5></li>
+        <li class="list-group-item"> Chapter 1:  C++ Revision Tour                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Object-Oriented Programming           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Function Overloading                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Classes And Objects                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Constructors And Destructors          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Inheritance: Extending Classes        <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Data File Handling                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Pointers                            <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Arrays                              <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Linked List, Stacks And Queues      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Database Concepts                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Structured Query Language           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Boolean Algebra                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Communication and Network Concepts  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  12 COMPUTER end -->
+
+
+
+
+
+   <!-- class 11 phsics start -->
+
+<div  id="classElevenPhysics" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>PHYSICS 11</h5></li>
+          <li class="list-group-item"> Chapter 1:  Physical World                   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/13tHGm68mo8fwBap5V2Ftz9FqQJuq_LpJ/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Units and Measurements             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1dUf6qtlzDUWx1ry5vhrxeF2Ia9jTzUU7/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Motion in a Straight Line          <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1ZvYz-DxIuoqWkjU_Xb7vsbeZiw5h5np9/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Motion in a Plane                  <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1nCjXv7hwcofAX9wH3-hQM7tqCRSRvo6t/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Laws of Motion                     <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1MmYiYG_YpoH_HgSew9h7BFnHD5xJ3RbS/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Work,Energy and Power              <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1YXp9BBUKeORuREiN-HdTWxVAW0MAccm0/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Systems of Particles and Rotational Motion   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1w0MlCHE3zMZigoQtWrNuohTQVFwb05Na/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Gravitation                      <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1RmGciPihl2i34hin2JQ3i_HLNX7RtSne/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Mechanical Properties of Solids  <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1FzzBm-bf1BOCaDray8DhUTi076dEbVxU/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Mechanical properties of Fluids  <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1T7EKuxKz7zOd4nPOS4tjTA6V_S_ex-bi/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Thermal Properties of Fluids     <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1mAw5XgXJN24SrNrhtPI8EzOz5tKczr-R/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Thermodynamics                   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1xPxVDDbHD6Eyha69aFYTPQyY-SWveETe/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Kinetic Theory                   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1wlifk_l9GNo-fAlfIeTi6-UpaZp2Tzpd/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Oscillations                     <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1MTlM0eeObz_1loKuqJ6uTj93LECvmXay/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Waves                            <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1sxsEI3DBTU9k85Ss0Xno_g7miimikBbJ/view?usp=sharing"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class 11 physics end -->
+
+
+    <!-- class 11 Chemistry start -->
+
+<div  id="classElevenChemistry" class="vw"> 
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>CHEMISTRY 11</h5></li>
+        <li class="list-group-item"> Chapter 1:  Some Basic Concepts of Chemisty      <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/19fIcI-OTDEvrlNpseu24FsGk1QX4Oo_g/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Structure of Atom                     <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1jBJvKEulIRg4MeX7Mh_iAeEKAGaMo0PP/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Classification of Elements and Periodicity in Properties  <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1mMMIjF-zp2dO6VIfoAVyxMkNc3AuCdKa/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Chemical Bonding and Molecular Structure    <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1XkslcW71TeBNR_sdhvjD8mytEV_I2EyI/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  States of Matter                      <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1g3s9s_Xf6lOPTMzKNiILAaiN9ieIjgpo/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Thermodynamics                        <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1UO_pR1YONohqqy2Y4Xh-KSyo9vGxZi7v/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Equilibrium                         <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1_chLQZqfpEvbBfXhHVePYGhGIisArXKA/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Redox Reactions                     <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1ARH3OjE-ryeNhJfrKcZ1umFtPd4SzWUC/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Hydrogen                            <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1_1ptakfeKI9e0K3BJ-PAyTovVaJ5ZXGS/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: The s-Block Elements                <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1iDnO-ZpIx6HDyHJcdLNrnH0oiDt08P27/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: The p-Block Elements                <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/15N6eglWr2yoOLoaOSJLDnDbvHXEUxd-R/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Organic Chemistry - Some Basic Principle & Technique     <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1pcZRyL_PUWHMEOFoFN6_ZNfCwhi1bkun/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Hydrocarbons                        <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/15LdhOfB5JFwkc1SEUDRe9fNrqTrCNDu3/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Enviromental Chemistry              <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1CPMMppPG1LBEF9_-j_LGwsxV5L2obGWh/view?usp=sharing"> Book </a>)</p> </li>
+          
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  11 CHEMISTRY end -->
+
+
+
+    <!-- class 11 Math start -->
+
+<div  id="classElevenMath" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>MATHEMATICS 11</h5></li>
+        <li class="list-group-item"> Chapter 1:  Sets                           <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1J6g69KMUOopZ7y8OezuTVeTC62g0-KM7/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Relations and Functions        <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/18x8_e3vJ03XQ79iyhE61XCVBnSWGhnv7/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Trignometric Functions         <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1bTUEned1uNkL6gVXsEnDQAFIPRI-BpGx/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Principle of Mathematical Induction      <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1cN61IQhCEL75_soD4QYnNjbg6CLHwRZL/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Complex Numbers and Quadratic Equations  <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1EB7XoK3-yPGgeRvQLbFw6RJ1ZzxLYRKr/view?usp=sharing"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Linear Inequalities             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1cjbiRyi8dIK1gLXXJDN-e0EKuLRHTDEU/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Permutations and Combinations <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1qNUyskYlARYwTCEyiHjtjaZSsrILwKev/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Bionomial Theorem             <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1FKzfrdTygfcEG8vqAHQb6fSNE79ncuhf/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Sequences and Series          <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/16mjssJM0gaoXL9vy7qVqUTdSEpFFRSSO/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Straight lines                <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1Ekt_I8un6X7TQRJ1CCVftdj8my_FPtpP/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Conic Section                 <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/187ETeMM4qwU-OU3x09R_WKNxtkoxyIm0/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Introduction to Three Dimensional Geometry    <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1HpOT6Bt2caY7insWDXcI6QjmIbtnn_b_/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Limits and Derivatives        <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1JygO5HjknksiEiJvTpTNlZV7lgv-sqAH/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Mathematical Reasoning        <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1EavAD-w2dRLk8F6xbkDPZx2K-Pg36EjM/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Statistics  class="para-right"                   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1EGagCWOV30SSeOSzwVKc9jrV_yoN7Vmt/view?usp=sharing"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Probability                   <p class="para-right">( <a href="#"> Notes </a> | <a href="https://drive.google.com/file/d/1UByAi2sK8foZJiEAUOnG30xCIwFan1_5/view?usp=sharing"> Book </a>)</p> </li>
+
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  11 Mathematics end -->
+
+
+
+    <!-- class 11 English start -->
+
+<div  id="classElevenEnglish" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>BIOLOGY 11</h5></li>
+        <li class="list-group-item"> Chapter 1:  The Living world                <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Biological Classification       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Plant Kingdom                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Animal Kingdom                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Morphology of Flowering Plants  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Anatomy of Flowering Plants     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Structural Organisation in Animals  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Cell, The Unit of Life        <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Biomolecule                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Cell Cycle and Cell Division  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Transport in Plants           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Mineral Nutrition              <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Photosynthesis in Higher Plants  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Respiration in Plants            <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Plant Growth and Development     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 16: Digestion and Absorption         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 17: Breathing and Exchange of Gases  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 18: Body Fluids and Circulation      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 19: Excretory Products and their Elimination   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 20: Locomotion and Movement          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 21: Neural Control  and Coordination <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 22: Chemical Coordination and Integration  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      
+         </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  11 English end -->
+
+
+    <!-- class 11 Computer start -->
+
+<div  id="classElevenComputer" class="vw"> 
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>COMPUTER 11</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields               <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism              <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction              <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                               <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  11 COMPUTER end -->
+
+
+
+
+
+   <!-- class 10th begin -->
+
+    <!-- class 10 English start -->
+
+<div  id="classTenEnglish" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>ENGLISH 10</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right"> class="para-right"( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class 10 english end -->
+
+
+
+    <!-- class 10 Math start -->
+
+<div  id="classTenMath" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width:auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>MATHEMATICS 10</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  10 math end -->
+
+
+    <!-- class 10 science start -->
+
+<div  id="classTenScience" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>SCIENCE 10</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  10 Science end -->
+
+
+
+    <!-- class 10 social science start -->
+
+<div  id="classTenSocialScience" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>SOCIAL SCIENCE 10</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  10 Social Science end -->
+
+   <!-- class 10 hindi start -->
+
+<div  id="classTenHindi" class="vw"> 
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5> HINDI 10</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  10 HINDI end -->
+
+
+      <!-- class 10 computer start -->
+
+<div  id="classTenComputer" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>COMPUTER 10</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  10 COMPUTER end -->
+
+
+
+
+
+   <!-- class 10th end  -->
+
+
+
+
+
+
+
+    <!-- class 9th begin -->
+
+    <!-- class 9 English start -->
+
+<div  id="classNineEnglish" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>ENGLISH 9</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class 9 english end -->
+
+
+
+    <!-- class 9 Math start -->
+
+<div  id="classNineMath"  class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>MATHEMATICS 9</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  9 math end -->
+
+
+    <!-- class 9 science start -->
+
+<div  id="classNineScience" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>SCIENCE 9</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right"> ( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  9 Science end -->
+
+
+
+    <!-- class 9 social science start -->
+
+<div  id="classNineSocialScience" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>SOCIAL SCIENCE 9</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  9 Social Science end -->
+
+   <!-- class 9 hindi start -->
+
+<div  id="classNineHindi" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5> HINDI 9</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right"> ( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+
+   <!--  class  9 HINDI end -->
+
+
+      <!-- class 9 computer start -->
+
+<div  id="classNineComputer" class="vw">
+
+ <div class="row mt-5">
+
+ 
+
+  <div class="col-lg-12 col-sm-12 col-md-12">
+
+  <div class="card border-success" style="width: auto;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center bg-light border-success "> <h5>COMPUTER 9</h5></li>
+        <li class="list-group-item"> Chapter 1:  Electric Charges And Fields                   <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 2:  Electrostatic Potential And Capacitance       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 3:  Current Electricity                           <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 4:  Moving Charges and Magnetism                  <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 5:  Magnetism and Matter                          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+        <li class="list-group-item"> Chapter 6:  Electromagnetic Induction                     <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 7:  Alternating Current                         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 8:  Electromagnetic Waves                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 9:  Ray Optics and Optical Instruments          <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 10: Wave Optics                                 <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 11: Dual Nature of Radiation and Matter         <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 12: Atoms                                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 13: Nuclei                                      <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 14: Semiconductor Electronics:Materials, Devices and Simple Circuits<p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+          <li class="list-group-item"> Chapter 15: Communication Systems                       <p class="para-right">( <a href="#"> Notes </a> | <a href="#"> Book </a>)</p> </li>
+      </ul>
+   </div>
+
+   </div>
+
+</div>
+</div>
+</div>
+
+
+   <!--  class  9 COMPUTER end -->
+
+
+
+
+
+   <!-- class 9th end  -->
+
+              </header><!-- /.page-title-bar -->
+             
+               
+
+     
+
+                  <!-- main footer -->
+
+                    <div class="bg-primary text-light Mob-size">
+                      <div class="footer-container">
+                      <div class="row">
+                        <div class="col-lg-3 mt-2 mb-3">
+                          <h5 class="text-center"><i class="fa fa-book mr-2"></i>Book2Notes</h5>
+                          <p class="text-justify mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde commodi dolore hic perspiciatis sit veritatis? Ratione incidunt, laboriosam tempore vero omnis ab quidem. Necessitatibus, quidem modi magnam autem facilis deleniti.</p>
+                        </div>
+                        <div class="col-lg-3 mt-2 mb-3 ">
+                           <h5 class="text-center "><i class="fa fa-map-marker mr-2"></i>Our Main Office</h5>
+                            <div class="Mob-adjust">
+                            <a href="">
+                              <i class="fa fa-globe mt-3 mr-2 ml-5 "></i><span>Varanasi, India</span>
+                            </a>
+                          <br>
+                            <a href="">
+                              <i class="fa fa-phone mt-3 mr-2 ml-5"></i><span>+91 1234567890</span>
+                            </a>
+                          <br>
+                            <a href="">
+                              <i class="fa fa-envelope mt-3 mr-2 ml-5"></i><span>books2notes@gmail.com</span>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center mt-2 mb-3">
+                          <h5 class="text-center"><i class="fa fa-share-alt mr-2"></i>Follow us</h5>
+                            <a href="https://www.facebook.com/Books2Notes-112194397177119">
+                              <i class="fa fa-facebook mt-3 mr-2"></i><span>facebook</span>
+                            </a>
+                          <br>
+                            <a href="">
+                              <i class="fa fa-whatsapp mt-3 mr-2"></i><span>whatsapp</span>
+                            </a>
+                          <br>
+                            <a href="https://www.instagram.com/books2notes/">
+                              <i class="fa fa-instagram mt-3 mr-2"></i><span>instagram</span>
+                            </a><br>
+                            <a href="">
+                              <i class="fa fa-twitter mt-3 mr-2"></i><span>twitter</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 text-center mt-2 mb-3">
+                          <h5 class="text-center"><i class="fa fa-info-circle mr-2"></i>Quick Links</h5>
+                          <a href="notes.html">
+                             <i class="fa fa-file-text mt-3 mr-2"></i><span>Notes</span>
+                            </a>
+                          <br>
+                            <a href="notes.html">
+                              <i class="fa fa-book mt-3 mr-2"></i><span>Books</span>
+                            </a>
+                          <br>
+                            <a href="notes.html">
+                              <i class="fa fa-file-pdf-o mt-3 mr-2"></i><span>PDFs</span>
+                            </a>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="footer-div">
+                        
+                      </div>
+                    </div>
+
+
+                  <!-- main footer end -->
+               
+                
+                
+              </div><!-- /.page-section -->
+            </div><!-- /.page-inner -->
+          </div><!-- /.page -->
+        </div><!-- .app-footer -->
+        
+      </main><!-- /.app-main -->
+
+    </div><!-- /.app -->
+
+
+
+
+    <!-- sidebar in small device -->
+<div id="sidebar" class="side-bar bg-info hide hide-lg pt-5 ">
+  <span id="closeSidebar"><i class="fa fa-times text-white" aria-hidden="true" onclick="hideSidebar();"></i></span>
+    <div class="text-white m-5">
+        <a href="index.html" class="font-color "><span class="menu-icon fa fa-home"></span> <span class="menu-text">Home</span></a><br><br>
+       <a href="notes.html" class="font-color "><span class="menu-icon fa fa-file-text"></span> <span class="menu-text">Notes</span> <span class="badge badge-warning">New</span></a><br><br>
+      <a href="notes.html" class="font-color "><span class="menu-icon fa fa-book"></span> <span class="menu-text">Books</span></a><br><br>
+      <a href="notes.html" class="font-color "><span class="menu-icon fa fa-file-pdf-o"></span> <span class="menu-text">PDFs</span></a> <br><br>
+      <a href="index.html" class="font-color"><span class="menu-icon fa fa-microchip"></span> <span class="menu-text">About us</span> <span class="badge badge-subtle badge-success">+4</span></a><br><br>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1FZJVZg2xxeYbBU8c1dqWb09AgHh5z5gJV7hemhICHbJgmg/viewform?usp=sf_link" class="font-color"><span class="menu-icon fa fa-rocket"></span> <span class="menu-text">Contact us</span></a><br><br>
+    </div>
+</div>
+
+<script>
+   function sidebarShow() {
+     document.getElementById('sidebar').style.display = 'block';
+   }
+
+   function hideSidebar() {
+      document.getElementById('sidebar').style.display = 'none';
+   }
+
+   function contactredirect(){
+     window.location.assign('https://docs.google.com/forms/d/e/1FAIpQLSf1FZJVZg2xxeYbBU8c1dqWb09AgHh5z5gJV7hemhICHbJgmg/viewform?usp=sf_link');
+   }
+
+
+</script>
+
+
+<!-- sidebar in small device -->
+
+
+
+    <script >
+
+
+  // FUNCTIONS FOR CLASS 12TH
+
+  function show(){
+
+            document.getElementById('classTwelvePhysics').style.display = 'block';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+      
+
+    function show1(){
+
+            document.getElementById('classTwelveChemistry').style.display = 'block';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+       
+
+    function show2(){
+
+            document.getElementById('classTwelveMath').style.display = 'block';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+      
+
+     function show3(){
+
+            document.getElementById('classTwelveEnglish').style.display = 'block';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+      
+
+     function show4(){
+
+            document.getElementById('classTwelveComputer').style.display = 'block';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+    
+
+
+       // FUNCTIONS FOR CLASS 12 TH END 
+
+
+
+
+
+
+       //FUNCTIONS FOR CLASS 11TH BEGIN
+
+
+       function show5(){
+
+            document.getElementById('classElevenPhysics').style.display = 'block';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+             function show6(){
+
+            document.getElementById('classElevenChemistry').style.display = 'block';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+             function show7(){
+
+            document.getElementById('classElevenMath').style.display = 'block';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+             function show8(){
+
+            document.getElementById('classElevenEnglish').style.display = 'block';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+             function show9(){
+
+            document.getElementById('classElevenComputer').style.display = 'block';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+
+
+
+       // FUNCTIONS FOR CLASS 11TH END 
+
+
+      
+
+       //FUNCTOIN FOR 10TH START
+
+        function show10(){
+
+            document.getElementById('classTenEnglish').style.display = 'block';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+
+         function show11(){
+
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'block';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+         function show12(){
+
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'block';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+         function show13(){
+
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'block';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+         function show14(){
+
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'block';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+            document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+        }
+
+         function show15(){
+          document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'block';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+        }
+
+
+       // FUNCTION FOR 10TH END
+
+
+
+
+       //function for 9th begins
+
+
+       function show16(){
+          document.getElementById('classNineEnglish').style.display = 'block';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+        }
+
+
+       function show17(){
+          document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'block';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+        }
+
+
+       function show18(){
+          document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'block';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+        }
+
+
+
+       function show19(){
+          document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'block';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+        }
+
+
+        function show20(){
+          document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'none';
+            document.getElementById('classNineHindi').style.display = 'block';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+        }
+
+
+        function show21(){
+          document.getElementById('classNineEnglish').style.display = 'none';
+            document.getElementById('classNineMath').style.display = 'none';
+            document.getElementById('classNineScience').style.display = 'none';
+            document.getElementById('classNineSocialScience').style.display = 'none';
+            document.getElementById('classNineComputer').style.display = 'block';
+            document.getElementById('classNineHindi').style.display = 'none';
+            document.getElementById('classTenEnglish').style.display = 'none';
+            document.getElementById('classTenMath').style.display = 'none';
+            document.getElementById('classTenScience').style.display = 'none';
+            document.getElementById('classTenSocialScience').style.display = 'none';
+            document.getElementById('classTenComputer').style.display = 'none';
+            document.getElementById('classTenHindi').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classTwelvePhysics').style.display = 'none';
+            document.getElementById('classTwelveChemistry').style.display = 'none';
+            document.getElementById('classTwelveMath').style.display = 'none';
+            document.getElementById('classTwelveEnglish').style.display = 'none';
+            document.getElementById('classTwelveComputer').style.display = 'none';
+            document.getElementById('classElevenChemistry').style.display = 'none';
+            document.getElementById('classElevenMath').style.display = 'none';
+            document.getElementById('classElevenEnglish').style.display = 'none';
+            document.getElementById('classElevenPhysics').style.display = 'none';
+            document.getElementById('classElevenComputer').style.display = 'none';
+        }
+
+
+
+
+
+       //function for 9th end
+
+
+
+</script>
+  
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
